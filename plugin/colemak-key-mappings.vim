@@ -115,9 +115,9 @@ onoremap r i
 "nnoremap g; ge|xnoremap g; ge|onoremap g; ge|
 " }
 " Folds, etc. {
-nnoremap ; z|xnoremap ; z|
+nnoremap \ z|xnoremap \ z|
 " Recursively open whatever top level fold we're in, no matter where the cursor happens to be
-nnoremap ;O zCzO
+nnoremap \O zCzO
 " }
 " Buffer next/previous {
 nnoremap gb :bnext<CR>
