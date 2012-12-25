@@ -38,6 +38,7 @@
 "   (  n  x)  j = z
 "
 "   (   o  )  r = i (Example: dip -> drp (Delete inner paragraph)) [Safe]
+"   (  n  x)  gL = L (To line [count] from bottom of window)
 "
 "   (  n  x)  gX = X (Cut backwards, synonymous with dh) [Safe]
 "   (  n  x)  gK = K (Lookup) [Safe]
@@ -139,6 +140,7 @@
 " Overridden keys must be prefixed with g {
     nnoremap gX X|xnoremap gX X|
     nnoremap gK K|xnoremap gK K|
+    nnoremap gL L|xnoremap gL L|
 " }
 " Window handling {
     nnoremap <C-w>n <C-w>j|xnoremap <C-w>n <C-w>j|
