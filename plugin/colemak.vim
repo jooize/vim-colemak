@@ -142,7 +142,6 @@
 " Overridden keys must be prefixed with g {
     nnoremap gs s|xnoremap gs s|
     nnoremap gX X|xnoremap gX X|
-    nnoremap gU U|xnoremap gU U|
     nnoremap gK K|xnoremap gK K|
     " Extra alias for "help"
     nnoremap gh K|xnoremap gh K|
