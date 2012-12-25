@@ -35,7 +35,7 @@
 "   (  no x)  b = ; (Repeat latest f or t)  B = , (Repeat latest f or t reversed)
 "   (  no x)  k = n (Repeat latest / or ?)  K = N (Repeat latest / or ? reversed)
 "
-"   (  n  x)  \ = z
+"   (  n  x)  j = z
 "
 "   (   o  )  r = i (Example: dip -> drp (Delete inner paragraph)) [Safe]
 "
@@ -137,7 +137,7 @@
     onoremap r i
 " }
 " Folds, etc. {
-    nnoremap \ z|xnoremap \ z|
+    nnoremap j z|xnoremap j z|
 " }
 " Overridden keys must be prefixed with g {
     nnoremap gs s|xnoremap gs s|
