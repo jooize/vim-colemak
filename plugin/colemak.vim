@@ -147,10 +147,9 @@
     " Extra alias for "help"
     nnoremap gh K|xnoremap gh K|
 " }
-" Window handling: <C-w> is now <C-r> {
-    nnoremap <C-r>h <C-w>h|xnoremap <C-r>h <C-w>h|
-    nnoremap <C-r>n <C-w>j|xnoremap <C-r>n <C-w>j|
-    nnoremap <C-r>e <C-w>k|xnoremap <C-r>e <C-w>k|
-    nnoremap <C-r>i <C-w>l|xnoremap <C-r>i <C-w>l|
+" Window handling {
+    nnoremap <C-w>n <C-w>j|xnoremap <C-w>n <C-w>j|
+    nnoremap <C-w>e <C-w>k|xnoremap <C-w>e <C-w>k|
+    nnoremap <C-w>i <C-w>l|xnoremap <C-w>i <C-w>l|
 " }
 
