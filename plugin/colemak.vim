@@ -1,6 +1,3 @@
-" Modeline {
-"   vim: set foldmarker={,} foldlevel=0:
-" }
 " Description {
 "   Original by Shai Coleman, 2008-04-21.  http://colemak.com/
 "   Modified by Joel Esko, 2012-09-14.  http://yuio.se/
