@@ -13,8 +13,8 @@
 "   (  novx)  h = h (Left)     i = l (Right)     e = k (Up)     n = j (Down)
 "   (  novx)  H = 5h (Left*5)  I = 5l (Right*5)  E = 5k (Up*5)  N = 5k (Down*5)
 "
-"   (  novx)  l = b (Back word)            y = w (Forward word)
-"   (  novx)  L = B (Back WORD)            Y = W (Forward WORD)
+"   (  novx)  l = b (Back word)            L = B (Back WORD)
+"   (  novx)  y = w (Forward word)         Y = W (Forward WORD)
 "   (  novx)  u = e (Forward end of word)  U = E (Forward end of WORD)
 "
 "   (c     )  <C-L> = <C-Left> (Back WORD)
@@ -31,6 +31,8 @@
 "   (  n  x)  c = y (Copy)    C = yy (Copy line)
 "   (  n  x)  v = gP (Paste)  V = p (Paste)
 "
+"   (   o  )  r = i (Example: dip -> drp (Delete inner paragraph))
+"
 "   (  no x)  p = t{char} (Before next {char})  P = T{char} (After previous {char})
 "   (  no x)  b = ; (Repeat latest f or t)  B = , (Repeat latest f or t reversed)
 "   (  no x)  k = n (Repeat latest / or ?)  K = N (Repeat latest / or ? reversed)
@@ -39,16 +41,22 @@
 "   (  n  x)  jn = zj (Next fold)
 "   (  n  x)  je = zk (Previous fold)
 "
-"   (   o  )  r = i (Example: dip -> drp (Delete inner paragraph)) [Safe]
+"   (  n  x)  gK = K (Lookup)
 "   (  n  x)  gL = L (To line [count] from bottom of window)
 "
-"   (  n  x)  gX = X (Cut backwards, synonymous with dh) [Safe]
-"   (  n  x)  gK = K (Lookup) [Safe]
+"   (  n  x)  <C-W>h = <C-W>h (Window left)
+"   (  n  x)  <C-W>n = <C-W>j (Window down)
+"   (  n  x)  <C-W>e = <C-W>k (Window up)
+"   (  n  x)  <C-W>i = <C-W>l (Window right)
 "
-"   (  n  x)  <C-W>h = <C-W>h (Window left) [Override! Alt: <C-W><Left> or <C-W><C-H> or <C-W><BS>]
-"   (  n  x)  <C-W>n = <C-W>j (Window down) [Override! Alt: <C-W><C-N>]
-"   (  n  x)  <C-W>e = <C-W>k (Window up) [Safe]
-"   (  n  x)  <C-W>i = <C-W>l (Window right) [Override! Alt: <C-W><C-I>]
+"   Lost:
+"   (  n  x)  H (To line [count] from top of window)
+"   (  n  x)  s (Substitute [count] characters) [Use wi = cl]
+"   (  n  x)  S (Substitute [count] lines) [Use ww = cc]
+"   (  n  x)  X (Cut [count] characters backwards) [Use dh = dh]
+"   (  n   )  Z (Quit)
+"   (  n  x)  <C-W>n (Window down) [Use <C-W><C-N> = <C-W><C-N>]
+"   (  n  x)  <C-W>i (Window down) [Use <C-W><C-I> = <C-W><C-I>]
 "
 "   Legend:
 "   <C-X>     Ctrl-X
