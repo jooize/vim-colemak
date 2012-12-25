@@ -117,10 +117,6 @@
 " Visual mode {
     nnoremap a v|xnoremap a v|
     nnoremap A V|xnoremap A V|
-    "nnoremap B <C-v>|
-    " Allow switching from visual line to visual block mode
-    vnoremap <silent> <expr> b (mode() =~# "[vV]" ? "\<C-v>0o$" : "")
-    vnoremap <silent> <expr> B (mode() =~# "[vV]" ? "\<C-v>0o$" : "")
     " Make insert/add work also in visual line mode like in visual block mode
     xnoremap <silent> <expr> s (mode() =~# "[V]" ? "\<C-v>0o$I" : "I")
     xnoremap <silent> <expr> S (mode() =~# "[V]" ? "\<C-v>0o$I" : "I")
@@ -128,51 +124,33 @@
     xnoremap <silent> <expr> T (mode() =~# "[V]" ? "\<C-v>0o$A" : "A")
 " }
 " Search {
+    " f/F are unchanged
     nnoremap p t|xnoremap p t|onoremap p t|
     nnoremap P T|xnoremap P T|onoremap P T|
     nnoremap b ;|xnoremap b ;|onoremap b ;|
     nnoremap B ,|xnoremap B ,|onoremap B ,|
-    " Always center search term (zzzv)
-    nnoremap k nzzzv|xnoremap k nzzzv|onoremap k nzzzv|
-    nnoremap K Nzzzv|xnoremap K Nzzzv|onoremap K Nzzzv|
-    " f/F are unchanged
+    nnoremap k n|xnoremap k n|onoremap k n|
+    nnoremap K N|xnoremap K N|onoremap K N|
 " }
 " inneR text objects {
     " e.g. dip (delete inner paragraph) is now drp
     onoremap r i
 " }
-" End of word forwards/backwards {
-    "nnoremap ; e|xnoremap ; e|onoremap ; e|
-    "nnoremap g; ge|xnoremap g; ge|onoremap g; ge|
-" }
 " Folds, etc. {
     nnoremap \ z|xnoremap \ z|
-    " Recursively open whatever top level fold we're in, no matter where the cursor happens to be
-    nnoremap \O zCzO
-" }
-" Buffer next/previous {
-    nnoremap gb :bnext<CR>
-    nnoremap gB :bprev<CR>
 " }
 " Overridden keys must be prefixed with g {
     nnoremap gs s|xnoremap gs s|
     nnoremap gX X|xnoremap gX X|
     nnoremap gU U|xnoremap gU U|
-    nnoremap gQ Q|xnoremap gQ Q|
     nnoremap gK K|xnoremap gK K|
     " Extra alias for "help"
     nnoremap gh K|xnoremap gh K|
 " }
 " Window handling: <C-w> is now <C-r> {
-    nnoremap <C-r> <C-w>|xnoremap <C-r> <C-w>|
-    " <C-r><C-r> opens a new window
-    nnoremap <C-r><C-r> <C-w>n|xnoremap <C-r><C-r> <C-w>n|
     nnoremap <C-r>h <C-w>h|xnoremap <C-r>h <C-w>h|
     nnoremap <C-r>n <C-w>j|xnoremap <C-r>n <C-w>j|
     nnoremap <C-r>e <C-w>k|xnoremap <C-r>e <C-w>k|
     nnoremap <C-r>i <C-w>l|xnoremap <C-r>i <C-w>l|
-" }
-" Redraw screen {
-    nnoremap <C-r><C-l> <C-l>|vnoremap <C-r><C-l> <C-l>|
 " }
 
