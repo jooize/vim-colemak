@@ -41,7 +41,6 @@
 "
 "   (  n  x)  gX = X (Cut backwards, synonymous with dh) [Safe]
 "   (  n  x)  gK = K (Lookup) [Safe]
-"   (  n  x)  gh = K (Lookup) [Override]
 "
 "   (  n  x)  <C-W>h = <C-W>h (Window left) [Override! Alt: <C-W><Left> or <C-W><C-H> or <C-W><BS>]
 "   (  n  x)  <C-W>n = <C-W>j (Window down) [Override! Alt: <C-W><C-N>]
@@ -140,8 +139,6 @@
 " Overridden keys must be prefixed with g {
     nnoremap gX X|xnoremap gX X|
     nnoremap gK K|xnoremap gK K|
-    " Extra alias for "help"
-    nnoremap gh K|xnoremap gh K|
 " }
 " Window handling {
     nnoremap <C-w>n <C-w>j|xnoremap <C-w>n <C-w>j|
