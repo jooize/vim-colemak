@@ -36,6 +36,8 @@
 "   (  no x)  k = n (Repeat latest / or ?)  K = N (Repeat latest / or ? reversed)
 "
 "   (  n  x)  j = z
+"   (  n  x)  jn = zj (Next fold)
+"   (  n  x)  je = zk (Previous fold)
 "
 "   (   o  )  r = i (Example: dip -> drp (Delete inner paragraph)) [Safe]
 "   (  n  x)  gL = L (To line [count] from bottom of window)
@@ -136,6 +138,8 @@
 " }
 " Folds, etc. {
     nnoremap j z|xnoremap j z|
+    nnoremap jn zj|xnoremap jn zj|
+    nnoremap je zk|xnoremap je zk|
 " }
 " Overridden keys must be prefixed with g {
     nnoremap gX X|xnoremap gX X|
