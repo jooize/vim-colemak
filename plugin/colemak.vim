@@ -111,7 +111,7 @@
 " }
 " Undo/redo {
     nnoremap z u|xnoremap z :<C-u>undo<CR>|
-    nnoremap gz U|xnoremap gz U<C-u>undo<CR>|
+    nnoremap gz U|xnoremap gz :<C-u>undo<CR>|
     nnoremap Z <C-r>|xnoremap Z :<C-u>redo<CR>|
 " }
 " Visual mode {
