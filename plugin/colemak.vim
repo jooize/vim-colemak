@@ -10,33 +10,55 @@
 "    arstd HNEIo'         h   i      |     h   l        asdfg HJKL;'
 "    zxcvb km,./            n        |       j          zxcvb nm,./
 "
-"   (  nv)  h = h (Left)       i = l (Right)     e = k (Up)     n = j (Down)
-"   (  nv)  H = 5h (Left*5)    I = 5l (Right*5)  E = 5k (Up*5)  N = 5k (Down*5)
+"   (  novx)  h = h (Left)       i = l (Right)     e = k (Up)     n = j (Down)
+"   (  novx)  H = 5h (Left*5)    I = 5l (Right*5)  E = 5k (Up*5)  N = 5k (Down*5)
 "
-"   (  nv)  l = b (Back word)            y = w (Forward word)
-"   (  nv)  L = B (Back WORD)            Y = W (Forward WORD)
-"   (  nv)  u = e (Forward end of word)  U = E (Forward end of WORD)
+"   (  novx)  l = b (Back word)            y = w (Forward word)
+"   (  novx)  L = B (Back WORD)            Y = W (Forward WORD)
+"   (  novx)  u = e (Forward end of word)  U = E (Forward end of WORD)
 "
-"   (c   )  <C-L> = <C-Left> (Back WORD)
-"   (c   )  <C-Y> = <C-Right> (Seems to equal forward WORD minus 1 character)
+"   (c     )  <C-L> = <C-Left> (Back WORD)
+"   (c     )  <C-Y> = <C-Right> (Seems to equal forward WORD minus 1 character)
 "
-"   (  n )  a = v (Visual)  A = V (Visual line)
-"   (  n )  s = i (Insert)  S = I (Insert before first non-blank of line)
-"   (  n )  t = a (Append)  T = A (Append at end of line)
-"   (  n )  w = c (Change)  W = C (Change to end of line)  ww = cc (Change line)
+"   (  n  x)  a = v (Visual)   A = V (Visual line)
+"   (  n   )  r = r (Replace)  R = R (Replace)
+"   (  n   )  s = i (Insert)   S = I (Insert before first non-blank of line)
+"   (  n   )  t = a (Append)   T = A (Append at end of line)
+"   (  n   )  w = c (Change)   W = C (Change to end of line)  ww = cc (Change line)
 "
-"   (  n )  z = u (Undo)    Z = <C-R> (Redo)  gz = U (Undo all latest changes on line)
-"   (  n )  x = x (Cut)     X = dd (Cut line)
-"   (  n )  c = y (Copy)    C = yy (Copy line)
-"   (  n )  v = gP (Paste)  V = p (Paste)
+"   (  n  x)  z = u (Undo)    Z = <C-R> (Redo)  gz = U (Undo all latest changes on line)
+"   (  n  x)  x = x (Cut)     X = dd (Cut line)
+"   (  n  x)  c = y (Copy)    C = yy (Copy line)
+"   (  n  x)  v = gP (Paste)  V = p (Paste)
+"
+"   (  no x)  p = t{char} (Before next {char})  P = T{char} (After previous {char})
+"   (  no x)  b = ; (Repeat latest f or t)  B = , (Repeat latest f or t reversed)
+"   (  no x)  k = n (Repeat latest / or ?)  K = N (Repeat latest / or ? reversed)
+"
+"   (  n  x)  \ = z
+"
+"   (   o  )  r = i (Example: dip -> drp (Delete inner paragraph)) [Safe]
+"
+"   (  n  x)  gs = s [Override! Alt: :sleep]
+"   (  n  x)  gS = S [Safe]
+"   (  n  x)  gX = X (Cut backwards, synonymous with dh) [Safe]
+"   (  n  x)  gK = K (Lookup) [Safe]
+"   (  n  x)  gh = K (Lookup) [Override]
+"
+"   (  n  x)  <C-W>h = <C-W>h (Window left) [Override! Alt: <C-W><Left> or <C-W><C-H> or <C-W><BS>]
+"   (  n  x)  <C-W>n = <C-W>j (Window down) [Override! Alt: <C-W><C-N>]
+"   (  n  x)  <C-W>e = <C-W>k (Window up) [Safe]
+"   (  n  x)  <C-W>i = <C-W>l (Window right) [Override! Alt: <C-W><C-I>]
 "
 "   Legend:
-"   <C-?>   Ctrl-?
-"   <S-?>   Shift-?
-"   (c   )  Command-line mode
-"   ( i  )  Insert mode
-"   (  n )  Normal mode
-"   (   v)  Visual+Select mode
+"   <C-X>     Ctrl-X
+"   <S-X>     Shift-X
+"   (c     )  Command-line mode
+"   ( i    )  Insert mode
+"   (  n   )  Normal mode
+"   (   o  )  Operator pending
+"   (    v )  Visual+Select mode
+"   (     x)  Visual mode
 " }
 " Require Vim >=7.0 {
     if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
