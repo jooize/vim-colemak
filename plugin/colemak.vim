@@ -39,8 +39,6 @@
 "
 "   (   o  )  r = i (Example: dip -> drp (Delete inner paragraph)) [Safe]
 "
-"   (  n  x)  gs = s [Override! Alt: :sleep]
-"   (  n  x)  gS = S [Safe]
 "   (  n  x)  gX = X (Cut backwards, synonymous with dh) [Safe]
 "   (  n  x)  gK = K (Lookup) [Safe]
 "   (  n  x)  gh = K (Lookup) [Override]
@@ -140,7 +138,6 @@
     nnoremap j z|xnoremap j z|
 " }
 " Overridden keys must be prefixed with g {
-    nnoremap gs s|xnoremap gs s|
     nnoremap gX X|xnoremap gX X|
     nnoremap gK K|xnoremap gK K|
     " Extra alias for "help"
