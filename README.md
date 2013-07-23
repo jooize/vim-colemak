@@ -8,7 +8,7 @@ Installation
 
 It is recommended to load `colemak.vim` after all other Vim scripts. If you use Vundle or Pathogen, I suggest adding a line to reload the script at the bottom of your Vim configuration file.
 
-    " Reload colemak.vim to remap any overwritten keys
+    " Reload colemak.vim to remap any overridden keys
     silent! source "$HOME/.vim/bundle/vim-colemak/plugin/colemak.vim"
 
 ### [Vundle](https://github.com/gmarik/vundle)
