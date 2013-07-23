@@ -38,8 +38,8 @@
 "   (  no x)  k = n (Repeat latest / or ?)  K = N (Repeat latest / or ? reversed)
 "
 "   (  n  x)  j = z
-"   (  n  x)  jn = zj (Next fold)
-"   (  n  x)  je = zk (Previous fold)
+"   (  n  x)  jn = zj (Next fold) [Also jj = zj]
+"   (  n  x)  je = zk (Previous fold) [Also jk = zk]
 "
 "   (  n  x)  gK = K (Lookup)
 "   (  n  x)  gL = L (To line [count] from bottom of window)
