@@ -95,8 +95,8 @@
     nnoremap U E|xnoremap U E|onoremap U E|
     nnoremap y w|xnoremap y w|onoremap y w|
     nnoremap Y W|xnoremap Y W|onoremap Y W|
-    cnoremap <C-l> <C-Left>
-    cnoremap <C-y> <C-Right>
+    cnoremap <C-L> <C-Left>
+    cnoremap <C-Y> <C-Right>
 " }
 " inSert/Replace/append (T) {
     nnoremap s i|
@@ -118,18 +118,18 @@
     nnoremap V p|xnoremap V p|
 " }
 " Undo/redo {
-    nnoremap z u|xnoremap z :<C-u>undo<CR>|
-    nnoremap gz U|xnoremap gz :<C-u>undo<CR>|
-    nnoremap Z <C-r>|xnoremap Z :<C-u>redo<CR>|
+    nnoremap z u|xnoremap z :<C-U>undo<CR>|
+    nnoremap gz U|xnoremap gz :<C-U>undo<CR>|
+    nnoremap Z <C-R>|xnoremap Z :<C-U>redo<CR>|
 " }
 " Visual mode {
     nnoremap a v|xnoremap a v|
     nnoremap A V|xnoremap A V|
     " Make insert/add work also in visual line mode like in visual block mode
-    xnoremap <silent> <expr> s (mode() =~# "[V]" ? "\<C-v>0o$I" : "I")
-    xnoremap <silent> <expr> S (mode() =~# "[V]" ? "\<C-v>0o$I" : "I")
-    xnoremap <silent> <expr> t (mode() =~# "[V]" ? "\<C-v>0o$A" : "A")
-    xnoremap <silent> <expr> T (mode() =~# "[V]" ? "\<C-v>0o$A" : "A")
+    xnoremap <silent> <expr> s (mode() =~# "[V]" ? "\<C-V>0o$I" : "I")
+    xnoremap <silent> <expr> S (mode() =~# "[V]" ? "\<C-V>0o$I" : "I")
+    xnoremap <silent> <expr> t (mode() =~# "[V]" ? "\<C-V>0o$A" : "A")
+    xnoremap <silent> <expr> T (mode() =~# "[V]" ? "\<C-V>0o$A" : "A")
 " }
 " Search {
     " f/F are unchanged
@@ -155,9 +155,9 @@
     nnoremap gL L|xnoremap gL L|
 " }
 " Window handling {
-    nnoremap <C-w>h <C-w>h|xnoremap <C-w>h <C-w>h|
-    nnoremap <C-w>n <C-w>j|xnoremap <C-w>n <C-w>j|
-    nnoremap <C-w>e <C-w>k|xnoremap <C-w>e <C-w>k|
-    nnoremap <C-w>i <C-w>l|xnoremap <C-w>i <C-w>l|
+    nnoremap <C-W>h <C-W>h|xnoremap <C-W>h <C-W>h|
+    nnoremap <C-W>n <C-W>j|xnoremap <C-W>n <C-W>j|
+    nnoremap <C-W>e <C-W>k|xnoremap <C-W>e <C-W>k|
+    nnoremap <C-W>i <C-W>l|xnoremap <C-W>i <C-W>l|
 " }
 
