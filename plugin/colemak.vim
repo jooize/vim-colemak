@@ -155,6 +155,7 @@
     nnoremap gL L|xnoremap gL L|
 " }
 " Window handling {
+    nnoremap <C-w>h <C-w>h|xnoremap <C-w>h <C-w>h|
     nnoremap <C-w>n <C-w>j|xnoremap <C-w>n <C-w>j|
     nnoremap <C-w>e <C-w>k|xnoremap <C-w>e <C-w>k|
     nnoremap <C-w>i <C-w>l|xnoremap <C-w>i <C-w>l|
