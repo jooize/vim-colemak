@@ -61,7 +61,7 @@ Key mappings
     (  n  x)  z = u (Undo)    Z = <C-R> (Redo)  gz = U (Undo all latest changes on line)
     (  n  x)  x = x (Cut)     X = dd (Cut line)
     (  n  x)  c = y (Copy)    C = yy (Copy line)
-    (  n  x)  v = gP (Paste)  V = p (Paste)
+    (  n  x)  v = p (Paste)   V = P (Paste)
  
     (   o  )  r = i (Example: dip -> drp (Delete inner paragraph))
  
