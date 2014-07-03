@@ -23,7 +23,7 @@
     nnoremap <silent> E @='5gk'<CR>|xnoremap <silent> E @='5gk'<CR>|onoremap <silent> E @='5gk'<CR>|
     nnoremap <silent> I @='5l'<CR>|xnoremap <silent> I @='5l'<CR>|onoremap <silent> I @='5l'<CR>|
 " }}}
-" Words forward/backwards {{{
+" Words forward/backward {{{
     " l/L = back word/WORD
     " u/U = end of word/WORD
     " y/Y = forward word/WORD
