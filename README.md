@@ -62,6 +62,7 @@ Key mappings
     (  n  x)  x = x (Cut)     X = dd (Cut line)
     (  n  x)  c = y (Copy)    C = yy (Copy line)
     (  n  x)  v = p (Paste)   V = P (Paste)
+    (  n  x)  gv = gp (Paste) gV = gP (Paste)
  
     (   o  )  r = i (Example: dip -> drp (Delete inner paragraph))
  

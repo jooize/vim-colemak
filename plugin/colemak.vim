@@ -91,6 +91,8 @@
     nnoremap gX X|xnoremap gX X|
     nnoremap gK K|xnoremap gK K|
     nnoremap gL L|xnoremap gL L|
+    nnoremap gv gp|xnoremap gv gp|
+    nnoremap gV gP|xnoremap gV gP|
 " }}}
 " Window handling {{{
     nnoremap <C-W>h <C-W>h|xnoremap <C-W>h <C-W>h|
