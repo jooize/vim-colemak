@@ -1,6 +1,6 @@
 " Description {{{
 "   Original by Shai Coleman, 2008-04-21.  http://colemak.com/
-"   Modified by Joel Esko, 2012-09-14.
+"   Modified by Esko, 2012-09-14.
 "
 "   Load colemak.vim after all other Vim scripts.
 "
