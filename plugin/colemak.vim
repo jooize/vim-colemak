@@ -4,7 +4,7 @@
 "
 "   Load colemak.vim after all other Vim scripts.
 "
-"   Refer to ../README.md for keymap explanations.
+"   Refer to ../README.markdown for keymap explanations.
 " }}}
 " Require Vim >=7.0 {{{
     if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
