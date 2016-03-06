@@ -61,6 +61,7 @@ Colemak layout:                  |                 QWERTY layout:
 (  n  x)  jn = zj (Next fold) [Also jj = zj]
 (  n  x)  je = zk (Previous fold) [Also jk = zk]
 
+(  n   )  ga = gv (Reselect last visual selection)
 (  n  x)  gK = K (Lookup)
 (  n  x)  gL = L (To line [count] from bottom of window)
 

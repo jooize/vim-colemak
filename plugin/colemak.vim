@@ -55,6 +55,7 @@
 " Visual mode {{{
     nnoremap a v|xnoremap a v|
     nnoremap A V|xnoremap A V|
+    nnoremap ga gv
     " Make insert/add work also in visual line mode like in visual block mode
     xnoremap <silent> <expr> s (mode() =~# "[V]" ? "\<C-V>0o$I" : "I")
     xnoremap <silent> <expr> S (mode() =~# "[V]" ? "\<C-V>0o$I" : "I")
