@@ -6,10 +6,10 @@ Colemak key mappings for Vim. Heavily trimmed and modified version of [Shai Cole
 Install
 -------
 
-1. Use [`vim-plug`](https://github.com/junegunn/vim-plug).
+1. Use [vim-plug](https://github.com/junegunn/vim-plug).
 2. Add to `.vimrc`: `Plug 'jooize/vim-colemak'`
 3. Run `:PlugInstall`
-4. You probably want to load `colemak.vim` last. Reload the plugin at the bottom of your Vim configuration.
+4. You probably want to load vim-colemak last. Reload the plugin at the bottom of your Vim configuration.
 
 ```
 " Reload vim-colemak to remap any overridden keys
