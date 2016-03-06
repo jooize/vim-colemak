@@ -74,7 +74,7 @@
     nnoremap K N|xnoremap K N|onoremap K N|
 " }}}
 " inneR text objects {{{
-    " e.g. dip (delete inner paragraph) is now drp
+    " E.g. dip (delete inner paragraph) is now drp
     onoremap r i
 " }}}
 " Folds, etc. {{{
