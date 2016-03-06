@@ -8,7 +8,7 @@ Install
 
 1. Use [vim-plug](https://github.com/junegunn/vim-plug).
 2. Add to `.vimrc`: `Plug 'jooize/vim-colemak'`
-3. Run `:PlugInstall`
+3. Run `vim +PlugInstall`
 4. You probably want to load vim-colemak last. Reload the plugin at the bottom of your Vim configuration.
 
 ```
