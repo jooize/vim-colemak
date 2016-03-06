@@ -43,7 +43,6 @@ Key mappings
      zxcvb km,./            n        |       j          zxcvb nm,./
  
     (  novx)  h = h (Left)     i = l (Right)     e = k (Up)     n = j (Down)
-    (  novx)  H = 5h (Left*5)  I = 5l (Right*5)  E = 5k (Up*5)  N = 5k (Down*5)
  
     (  novx)  l = b (Back word)            L = B (Back WORD)
     (  novx)  y = w (Forward word)         Y = W (Forward WORD)

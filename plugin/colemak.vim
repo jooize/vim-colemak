@@ -15,13 +15,6 @@
     nnoremap e k|xnoremap e k|onoremap e k|
     nnoremap i l|xnoremap i l|onoremap i l|
 " }}}
-" Turbo navigation {{{
-    " Works with counts, see ":help complex-repeat"
-    nnoremap <silent> H @='5h'<CR>|xnoremap <silent> H @='5h'<CR>|onoremap <silent> H @='5h'<CR>|
-    nnoremap <silent> N @='5gj'<CR>|xnoremap <silent> N @='5gj'<CR>|onoremap <silent> N @='5gj'<CR>|
-    nnoremap <silent> E @='5gk'<CR>|xnoremap <silent> E @='5gk'<CR>|onoremap <silent> E @='5gk'<CR>|
-    nnoremap <silent> I @='5l'<CR>|xnoremap <silent> I @='5l'<CR>|onoremap <silent> I @='5l'<CR>|
-" }}}
 " Words forward/backward {{{
     " l/L = back word/WORD
     " u/U = end of word/WORD
