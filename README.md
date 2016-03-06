@@ -3,22 +3,20 @@ vim-colemak
 
 Colemak key mappings for Vim. Heavily trimmed and modified version of [Shai Coleman's configuration](http://colemak.com/pub/vim/colemak.vim).
 
-Installation
-------------
+Install
+-------
 
-It is recommended to load `colemak.vim` after all other Vim scripts. If you use Vundle or Pathogen, I suggest adding a line to reload the script at the bottom of your Vim configuration file.
+1. Use [`vim-plug`](https://github.com/junegunn/vim-plug).
+2. Add to `.vimrc`: `Plug 'jooize/vim-colemak'`
+3. Run `:PlugInstall`
+4. You probably want to load `colemak.vim` last. Reload the plugin at the bottom of your Vim configuration.
 
-    " Reload colemak.vim to remap any overridden keys
-    silent! source "$HOME/.vim/bundle/vim-colemak/plugin/colemak.vim"
+```
+" Reload vim-colemak to remap any overridden keys
+silent! source "$HOME/.vim/bundle/vim-colemak/plugin/colemak.vim"
+```
 
-### [Vundle](https://github.com/gmarik/vundle)
-
-1. Add `Bundle 'jooize/vim-colemak'` to `~/.vim/bundles.vim`.
-2. Run `vim +BundleInstall` or `:BundleInstall` within Vim.
-
-### [Pathogen](https://github.com/tpope/vim-pathogen)
-
-    git clone git@github.com:jooize/vim-colemak.git $HOME/.vim/bundle/vim-colemak
+*Note: You might be using `~/.vim/plugged`.*
 
 Issues
 ------
