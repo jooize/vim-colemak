@@ -11,12 +11,17 @@ Install
 3. Run `vim +PlugInstall`
 4. You probably want to load vim-colemak last. Reload the plugin at the bottom of your Vim configuration.
 
-```
-" Reload vim-colemak to remap any overridden keys
-silent! source "$HOME/.vim/bundle/vim-colemak/plugin/colemak.vim"
+    ```
+    " Reload vim-colemak to remap any overridden keys
+    silent! source "$HOME/.vim/bundle/vim-colemak/plugin/colemak.vim"
+    ```
+
+    *Note: You might be using `~/.vim/plugged`.*
+
+5. See [issues](#issues) for conflicts with other plugins.
+
 ```
 
-*Note: You might be using `~/.vim/plugged`.*
 
 Issues
 ------
