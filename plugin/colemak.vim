@@ -10,10 +10,9 @@
     if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
 " }}}
 " Up/down/left/right {{{
-    " Always go down/up one line regardless of "set wrap". Is that a sane default?
     nnoremap h h|xnoremap h h|onoremap h h|
-    nnoremap n gj|xnoremap n gj|onoremap n gj|
-    nnoremap e gk|xnoremap e gk|onoremap e gk|
+    nnoremap n j|xnoremap n j|onoremap n j|
+    nnoremap e k|xnoremap e k|onoremap e k|
     nnoremap i l|xnoremap i l|onoremap i l|
 " }}}
 " Turbo navigation {{{
