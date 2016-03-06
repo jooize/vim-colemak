@@ -102,3 +102,11 @@ Issues
         autocmd BufEnter * silent! execute "nunmap <buffer> <silent> y<C-G>"
     augroup END
 
+Changes
+-------
+
+### 2016–03–06
+
+- [Restore wrapped line behavior to Vim default (e.g. n = gj is now n = j)](https://github.com/jooize/vim-colemak/commit/6882195551f1025e72f352811ea7b331bc73b32e)
+- [Remove turbo navigation (HNEI are now unmapped)](https://github.com/jooize/vim-colemak/commit/c057ed04075cab3f0a67c0fdc30c9d2f35621eff)
+- [Add missing mapping for reselecting last visual selection (ga = gv)](https://github.com/jooize/vim-colemak/commit/5167bbf4c411fd765833c97bfc078bed53cc995e)
