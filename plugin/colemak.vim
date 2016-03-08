@@ -1,27 +1,19 @@
 " Description {{{
 "   Original by Shai Coleman, 2008-04-21.  http://colemak.com/
-"   Modified by Joel Esko, 2012-09-14.
+"   Modified by Esko, 2012-09-14.
 "
 "   Load colemak.vim after all other Vim scripts.
 "
-"   Refer to ../README.md for keymap explanations.
+"   Refer to ../README.markdown for keymap explanations.
 " }}}
 " Require Vim >=7.0 {{{
     if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
 " }}}
 " Up/down/left/right {{{
-    " Always go down/up one line regardless of "set wrap". Is that a sane default?
     nnoremap h h|xnoremap h h|onoremap h h|
-    nnoremap n gj|xnoremap n gj|onoremap n gj|
-    nnoremap e gk|xnoremap e gk|onoremap e gk|
+    nnoremap n j|xnoremap n j|onoremap n j|
+    nnoremap e k|xnoremap e k|onoremap e k|
     nnoremap i l|xnoremap i l|onoremap i l|
-" }}}
-" Turbo navigation {{{
-    " Works with counts, see ":help complex-repeat"
-    nnoremap <silent> H @='5h'<CR>|xnoremap <silent> H @='5h'<CR>|onoremap <silent> H @='5h'<CR>|
-    nnoremap <silent> N @='5gj'<CR>|xnoremap <silent> N @='5gj'<CR>|onoremap <silent> N @='5gj'<CR>|
-    nnoremap <silent> E @='5gk'<CR>|xnoremap <silent> E @='5gk'<CR>|onoremap <silent> E @='5gk'<CR>|
-    nnoremap <silent> I @='5l'<CR>|xnoremap <silent> I @='5l'<CR>|onoremap <silent> I @='5l'<CR>|
 " }}}
 " Words forward/backward {{{
     " l/L = back word/WORD
@@ -54,6 +46,8 @@
     nnoremap X dd|xnoremap X d|
     nnoremap C yy|xnoremap C y|
     nnoremap V P|xnoremap V P|
+    nnoremap gv gp|xnoremap gv gp|
+    nnoremap gV gP|xnoremap gV gP|
 " }}}
 " Undo/redo {{{
     nnoremap z u|xnoremap z :<C-U>undo<CR>|
@@ -63,6 +57,7 @@
 " Visual mode {{{
     nnoremap a v|xnoremap a v|
     nnoremap A V|xnoremap A V|
+    nnoremap ga gv
     " Make insert/add work also in visual line mode like in visual block mode
     xnoremap <silent> <expr> s (mode() =~# "[V]" ? "\<C-V>0o$I" : "I")
     xnoremap <silent> <expr> S (mode() =~# "[V]" ? "\<C-V>0o$I" : "I")
@@ -79,7 +74,7 @@
     nnoremap K N|xnoremap K N|onoremap K N|
 " }}}
 " inneR text objects {{{
-    " e.g. dip (delete inner paragraph) is now drp
+    " E.g. dip (delete inner paragraph) is now drp
     onoremap r i
 " }}}
 " Folds, etc. {{{
@@ -91,8 +86,6 @@
     nnoremap gX X|xnoremap gX X|
     nnoremap gK K|xnoremap gK K|
     nnoremap gL L|xnoremap gL L|
-    nnoremap gv gp|xnoremap gv gp|
-    nnoremap gV gP|xnoremap gV gP|
 " }}}
 " Window handling {{{
     nnoremap <C-W>h <C-W>h|xnoremap <C-W>h <C-W>h|
