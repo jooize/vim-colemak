@@ -110,3 +110,19 @@ Changes
 - [Restore wrapped line behavior to Vim default (e.g. n = gj is now n = j)](https://github.com/jooize/vim-colemak/commit/6882195551f1025e72f352811ea7b331bc73b32e)
 - [Remove turbo navigation (HNEI are now unmapped)](https://github.com/jooize/vim-colemak/commit/c057ed04075cab3f0a67c0fdc30c9d2f35621eff)
 - [Add missing mapping for reselecting last visual selection (ga = gv)](https://github.com/jooize/vim-colemak/commit/5167bbf4c411fd765833c97bfc078bed53cc995e)
+
+#### Restore turbo navigation
+
+Add the following to your `.vimrc`:
+
+```
+" Turbo navigation (Colemak) {{{
+    " Works with counts, see ":help complex-repeat"
+    nnoremap <silent> H @='5h'<CR>|xnoremap <silent> H @='5h'<CR>|onoremap <silent> H @='5h'<CR>|
+    nnoremap <silent> N @='5gj'<CR>|xnoremap <silent> N @='5gj'<CR>|onoremap <silent> N @='5gj'<CR>|
+    nnoremap <silent> E @='5gk'<CR>|xnoremap <silent> E @='5gk'<CR>|onoremap <silent> E @='5gk'<CR>|
+    nnoremap <silent> I @='5l'<CR>|xnoremap <silent> I @='5l'<CR>|onoremap <silent> I @='5l'<CR>|
+" }}}
+```
+
+I removed turbo navigation since I felt it doesn't suit as default Vim mappings, which also frees up the keys for custom uses. I'm considering making it an option. [Discuss!](https://github.com/jooize/vim-colemak/issues/4)
