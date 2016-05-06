@@ -93,4 +93,3 @@
     nnoremap <C-W>e <C-W>k|xnoremap <C-W>e <C-W>k|
     nnoremap <C-W>i <C-W>l|xnoremap <C-W>i <C-W>l|
 " }}}
-
