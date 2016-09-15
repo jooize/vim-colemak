@@ -26,11 +26,11 @@ Key mappings
 ```
 Colemak layout:                  |                 QWERTY layout:
 `12345 67890-=     Move around:  |  (instead of)   `12345 67890-=
- qwfpg jluy;[]\         e        |       k          qwert yuiop[]\
- arstd HNEIo'         h   i      |     h   l        asdfg HJKL;'
- zxcvb km,./            n        |       j          zxcvb nm,./
+ qwfpg jluy;[]\         i        |       k          qwert yuiop[]\
+ arstd hNEIO'         n   o      |     h   l        asdfg HJKL;'
+ zxcvb km,./            e        |       j          zxcvb nm,./
 
-(  novx)  h = h (Left)     i = l (Right)     e = k (Up)     n = j (Down)
+(  novx)  n = h (Left)     o = l (Right)     i = k (Up)     e = j (Down)
 
 (  novx)  l = b (Back word)            L = B (Back WORD)
 (  novx)  y = w (Forward word)         Y = W (Forward WORD)
@@ -39,11 +39,12 @@ Colemak layout:                  |                 QWERTY layout:
 (c     )  <C-L> = <C-Left> (Back WORD)
 (c     )  <C-Y> = <C-Right> (Seems to equal forward WORD minus 1 character)
 
-(  n  x)  a = v (Visual)   A = V (Visual line)
-(  n   )  r = r (Replace)  R = R (Replace)
-(  n   )  s = i (Insert)   S = I (Insert before first non-blank of line)
-(  n   )  t = a (Append)   T = A (Append at end of line)
-(  n   )  w = c (Change)   W = C (Change to end of line)  ww = cc (Change line)
+(  n  x)  a = v (Visual)                  A = V (Visual line)
+(  n   )  r = r (Replace)                 R = R (Replace)
+(  n   )  s = i (Insert)                  S = I (Insert before first non-blank of line)
+(  n   )  h = o (Insert new line below)   H = O (Insert new line above)
+(  n   )  t = a (Append)                  T = A (Append at end of line)
+(  n   )  w = c (Change)                  W = C (Change to end of line)  ww = cc (Change line)
 
 (  n  x)  z = u (Undo)    Z = <C-R> (Redo)  gz = U (Undo all latest changes on line)
 (  n  x)  x = x (Cut)     X = dd (Cut line)
