@@ -66,10 +66,10 @@ Colemak layout:                  |                 QWERTY layout:
 (  n  x)  gK = K (Lookup)
 (  n  x)  gL = L (To line [count] from bottom of window)
 
-(  n  x)  <C-W>h = <C-W>h (Window left)
-(  n  x)  <C-W>n = <C-W>j (Window down)
-(  n  x)  <C-W>e = <C-W>k (Window up)
-(  n  x)  <C-W>i = <C-W>l (Window right)
+(  n  x)  <C-W>n = <C-W>h (Window left)
+(  n  x)  <C-W>e = <C-W>j (Window down)
+(  n  x)  <C-W>i = <C-W>k (Window up)
+(  n  x)  <C-W>o = <C-W>l (Window right)
 
 Lost:
 (  n  x)  H (To line [count] from top of window)
