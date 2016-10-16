@@ -34,6 +34,7 @@
     nnoremap t a|
     nnoremap T A|
     nnoremap h o|
+    nnoremap H O|
 " }}}
 " Change {{{
     nnoremap w c|xnoremap w c|
