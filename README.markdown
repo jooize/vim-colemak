@@ -1,7 +1,7 @@
 vim-colemak
 ===========
 
-Colemak key mappings for Vim. Heavily trimmed and modified version of [Shai Coleman's configuration](http://colemak.com/pub/vim/colemak.vim).
+Colemak key mappings for Vim. Trimmed and modified version of [Shai Coleman's configuration](http://colemak.com/pub/vim/colemak.vim).
 
 Install
 -------
